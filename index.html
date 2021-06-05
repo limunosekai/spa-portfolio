@@ -10,9 +10,21 @@
   <link rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon.ico">
   <title>SPA Portfolio</title>
   <script src="https://kit.fontawesome.com/c620c5f38a.js" crossorigin="anonymous"></script>
-  <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/main.js" defer></script>
 </head>
 <body>
+  <!-- Progress Bar-->
+  <div class="progress">
+    <div class="progressBar"></div>
+  </div>
+
+  <!-- Loading -->
+  <div class="loading">
+    <div class="loader"></div>
+    <span>잠시만 기다려주세요</span>
+  </div>
+
+  <!-- Header -->
   <header>
     <div class="container">
       <h2><span>LIMU</span>Portfolio</h2>
@@ -42,8 +54,9 @@
     </section>
 
     <section id="about" class="about">
+      <div class="about-bg"></div>
       <div class="container">
-        <h2><i class="far fa-address-card"></i> About</h2>
+        <h2><i class="fas fa-angle-double-right"></i> About</h2>
         <div class="underline"></div>
         <div class="card-wrapper">
           <div class="card">
@@ -91,7 +104,7 @@
               <i class="fas fa-envelope"></i>
               <div class="card-info">
                 <h6>E-mail</h6>
-                <span>powerlsh0103@gmail.com</span>
+                <a href="mailto:powerlsh0103@gmail.com">powerlsh0103@gmail.com</a>
               </div>
             </div>
           </div>
@@ -109,11 +122,23 @@
         </div>
       
       </div>
+
+      <div class="intro container">
+        <div class="intro-wrapper">
+          <h3>✨ Introduction</h3>
+          <p>-  안녕하세요! 주니어 프론트엔드 개발자 임성현입니다.</p>
+          <p>-  의류학과를 전공하였지만 아름다운 웹을 만들고자 개발자로 전향했습니다.</p>
+          <p>-  KG ITBank 웹 개발자 양성과정(6개월)을 수료하였습니다.</p>
+          <p>-  매일 개발일지를 블로그에 포스팅하는 끈질긴 노력가입니다.</p>
+          <p>-  Javascript와 Javascript 생태계에 관심이 많습니다.</p>
+        </div>
+      </div>
     </section>
 
     <section id="skills" class="skills">
       <div class="container">
-        <h2>Skills</h2>
+        <h2><i class="fas fa-angle-double-right"></i> Skills</h2>
+        <div class="underline"></div>
         <div class="skills-gird">
 
           <div class="skill">
