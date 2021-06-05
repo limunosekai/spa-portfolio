@@ -5,11 +5,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;0,900;1,400;1,600;1,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/main.css">
   <link rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;0,900;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
+  <link rel="stylesheet" href="./assets/css/main.css">
   <title>SPA Portfolio</title>
   <script src="https://kit.fontawesome.com/c620c5f38a.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="./assets/js/main.js" defer></script>
 </head>
 <body>
@@ -38,7 +43,9 @@
     </div>
   </header>
 
+  <!-- Main -->
   <main>
+    <!-- Banner -->
     <section class=banner id="home">
       <div class="container">
         <h1>
@@ -54,6 +61,7 @@
       </div>
     </section>
 
+    <!-- About Page -->
     <section id="about" class="about">
       <div class="about-bg"></div>
       <div class="container">
@@ -136,6 +144,7 @@
       </div>
     </section>
 
+    <!-- Skills Page -->
     <section id="skills" class="skills">
       <div class="container">
         <h2><i class="fas fa-angle-double-right"></i> Skills</h2>
@@ -241,73 +250,98 @@
       </div>
     </section>
 
+    <!-- Projects Page -->
     <section class="projects" id="projects">
       <div class="container">
-        <h2>Projects</h2>
+        <h2><i class="fas fa-angle-double-right"></i> Projects</h2>
+        <div class="underline"></div>
         <div class="projects-gird">
+          <div class="swiper-container project1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./assets/images/project.jpg" alt="#" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/project.jpg" alt="#" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/project.jpg" alt="#" />
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
 
           <div class="project">
             <div class="content">
               <h3>Project 1</h3>
               <p>lerem leremleremleremlerem leremleremleremleremleremlerem
                 leremleremleremlerem leremlerem.</p>
-                <a href="#" class="button">Learn more</a>
+              <a href="#" class="button">Learn more</a>
             </div>
           </div>
-
-          <div class="project">
-            <div class="content">
-              <h3>Project 2</h3>
-              <p>lerem leremleremleremlerem leremleremleremleremleremlerem
-                leremleremleremlerem leremlerem.</p>
-                <a href="#" class="button">Learn more</a>
-            </div>
-          </div>
-
-          <div class="project">
-            <div class="content">
-              <h3>Project 3</h3>
-              <p>lerem leremleremleremlerem leremleremleremleremleremlerem
-                leremleremleremlerem leremlerem.</p>
-                <a href="#" class="button">Learn more</a>
-            </div>
-          </div>
-
-          <div class="project">
-            <div class="content">
-              <h3>Project 4</h3>
-              <p>lerem leremleremleremlerem leremleremleremleremleremlerem
-                leremleremleremlerem leremlerem.</p>
-                <a href="#" class="button">Learn more</a>
-            </div>
-          </div>
-
-          <div class="project">
-            <div class="content">
-              <h3>Project 5</h3>
-              <p>lerem leremleremleremlerem leremleremleremleremleremlerem
-                leremleremleremlerem leremlerem.</p>
-                <a href="#" class="button">Learn more</a>
-            </div>
-          </div>
-
-          <div class="project">
-            <div class="content">
-              <h3>Project 6</h3>
-              <p>lerem leremleremleremlerem leremleremleremleremleremlerem
-                leremleremleremlerem leremlerem.</p>
-                <a href="#" class="button">Learn more</a>
-            </div>
-          </div>
-
         </div>
 
-        <div class="center">
-          <a href="#" class="button">View more</a>
+        <div class="projects-gird">
+          <div class="swiper-container project2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./assets/images/project.jpg" alt="#" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/project.jpg" alt="#" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/project.jpg" alt="#" />
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <div class="project">
+            <div class="content">
+              <h3>Project 1</h3>
+              <p>lerem leremleremleremlerem leremleremleremleremleremlerem
+                leremleremleremlerem leremlerem.</p>
+              <a href="#" class="button">Learn more</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects-gird">
+          <div class="swiper-container project3">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./assets/images/project.jpg" alt="#" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/project.jpg" alt="#" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/project.jpg" alt="#" />
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <div class="project">
+            <div class="content">
+              <h3>Project 1</h3>
+              <p>lerem leremleremleremlerem leremleremleremleremleremlerem
+                leremleremleremlerem leremlerem.</p>
+              <a href="#" class="button">Learn more</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- Contact Page -->
     <section class="contact" id="contact">
       <div class="container">
         <h2>Contact</h2>
