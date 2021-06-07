@@ -681,6 +681,10 @@ main {
 
         .rignt-align {
           text-align: center;
+
+          .button {
+            background: transparent;
+          }
         }
       }
     }
